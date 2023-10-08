@@ -1,11 +1,12 @@
-import './App.css';
+import { BrowserRouter } from 'react-router-dom'
+import AppRoutes from './components/routes/routes'
 
 function App() {
   return (
-    <div className="App">
-      Здесь скоро будет Skypro.Music
-    </div>
-  );
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App

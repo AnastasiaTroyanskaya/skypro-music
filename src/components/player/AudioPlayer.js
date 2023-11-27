@@ -47,7 +47,6 @@ export default function Player({ prop, setTrack }) {
     <S.bar>
       <S.barContent>
         {prop && (
-          // eslint-disable-next-line jsx-a11y/media-has-caption
           <audio
             ref={audioRef}
             onTimeUpdate={onTimeUpdate}

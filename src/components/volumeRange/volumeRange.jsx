@@ -5,7 +5,6 @@ export const VolumeRange = ({ audioRef }) => {
   const [volume, setVolume] = useState(50)
   useEffect(() => {
     if (audioRef) {
-      // eslint-disable-next-line no-param-reassign
       audioRef.current.volume = volume / 100
     }
   }, [volume, audioRef])

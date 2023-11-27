@@ -10,7 +10,6 @@ export const ProgressBar = ({ audioRef, timeProgress, duration }) => (
     <S.barPlayerProgress
       type="range"
       onChange={(e) => {
-        // eslint-disable-next-line no-param-reassign
         audioRef.current.currentTime = e.target.value
       }}
       min={0}

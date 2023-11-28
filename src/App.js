@@ -19,6 +19,7 @@ function App() {
   }, [])
 
   return (
+    // eslint-disable-next-line react/jsx-no-constructed-context-values
     <AuthContext.Provider value={{ isAuth, setIsAuth, isLoading }}>
       <Provider store={store}>
         <BrowserRouter>
